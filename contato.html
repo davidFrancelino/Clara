@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Clara Nunes</title>
+	<link rel="stylesheet" type="text/css" href="_Estilos/styles.css"/>
+
+</head>
+<script language="javascript" src="_Scripts/funcoes.js"> </script>
+
+<body>
+	
+	<div id="interface">
+
+		<header id="cabecalho">
+
+		<hgroup>
+		<h1>Clara Nunes</h1>
+		<h2>A DERRUBADORA DE MITOS</h2>
+		</hgroup>
+
+		<img id="icone" src="_imagens/ICON_CLARA_NUNES.png">
+
+		<nav id="menu">
+			<h1>Menu Principal</h1>
+			<ul>
+				<li onmouseover="mudaFoto('_Imagens/ICON_CLARA_NUNES.png')" onmouseout="mudaFoto('_Imagens/ICON_CONTATO.png')"><a href="index.html">Home</a></li>
+				<li onmouseover="mudaFoto('_Imagens/ICON_HISTORIA.png')" onmouseout="mudaFoto('_Imagens/ICON_CONTATO.png')"><a href="historia.html">História</a></li>
+				<li onmouseover="mudaFoto('_Imagens/ICON_FOTOS.png')" onmouseout="mudaFoto('_Imagens/ICON_CONTATO.png')"> <a href="fotos.html">Fotos</a></li>
+				<li onmouseover="mudaFoto('_Imagens/ICON_TRABALHOS.png')" onmouseout="mudaFoto('_Imagens/ICON_CONTATO.png')"><a href="trabalhos.html">Trabalhos</a></li>
+				<li onmouseover="mudaFoto('_Imagens/ICON_CONTATO.png')" onmouseout="mudaFoto('_Imagens/ICON_CONTATO.png')"><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+		</header>
+
+		<section id="formsContato">
+			<p>A cantora mineira saiu de cena aos 40 anos, no auge artístico. O canto luminoso atingia picos de maturidade, dando voz a um Brasil mestiço que reluziu nas cores vivas de <b><cite>Nação</cite></b>, último álbum de Clara. Cores expostas na capa criada por Elifas Andreato para o disco.</p>
+
+			<p>Em 1982, Clara Nunes já tinha conseguido o objetivo de ser percebida como uma cantora de música brasileira, ainda que o samba fosse mote e norte do repertório da artista. <b><cite>Nação</cite></b> reforçou essa identidade.</p>
+
+			<p>Obra-prima da discografia nacional, <b><cite>Nação</cite></b> abriu com o samba que lhe dá título. Em <b><cite>Nação</cite></b>, a música, João Bosco – compositor então gravado pela primeira vez pela mineira conterrânea – e Aldir Blanc se juntaram ao parceiro ocasional Paulo Emílio para ressignificar signos exaltados na <b><cite>Aquarela do Brasil</cite></b> (Ary Barroso, 1939), samba-emblema de tempos idos.</p><br/>
+
+
+			<form name="contato" method="POST" data-netlify="true">
+				<label for="nome">Nome</label>
+				<input type="text" id="nome" name="nome" placeholder="Digite seu nome" required /><br/><br/>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required /><br/><br/>
+
+				<label for="msg">Mensagem</label><br/>
+				<textarea name="msg" id="msg" cols="40" rows="5" required> </textarea>
+				<br/><br/>
+				<!--<input type="submit" value="Enviar"/>-->
+				
+				<label for="flagConheceClara"> Você gosta da Clara?</label><br/>
+				<input type="radio" id="sim" value="sim" name="flagConheceClara"/><label for="sim">Sim</label>
+				<br/>
+				<input type="radio" id="nao" value="nao" name="flagConheceClara"/><label for="nao">Não</label>
+				<br/><br/>
+
+				<label for="comoConheceuClara">Como conheceu Clara?</label><br/>
+				<input type="checkbox"  name="comoConheceuClara" id="redeSocial" value="redeSocial"/><label for="redeSocial">Redes Sociais</label><br/>
+				<input type="checkbox" name="comoConheceuClara" id="shows" value="shows"><label for="shows">Shows</label><br/>
+				<input type="checkbox" name="comoConheceuClara" id="TV" value="TV"><label for="TV">TV</label>
+				<br/><br/>
+
+				<label for="album">Vote no melhor Albúm</label>
+				<select name="album" id="album"><br/>
+					<option selected disabled>Selecione</option>
+					<option value="VOZ_ADR_CLARA">A Voz Adorável de Clara Nunes</option>
+					<option value="VC_PASSA">Você Passa, Eu Acho Graça</option>
+					<option value="BLZ_Q_CANTA">A Beleza Que Canta</option>
+					<option value="CLARA_CLARICE">Clara, Clarice, Clara</option>
+				</select><br/><br/>
+
+
+				<button type="reset">Limpar</button>
+				<button type="submit">Enviar</button><br/><br/><br/>
+
+			</form>
+		</section>
+
+
+
+
+
+
+
+
+		<footer id="rodape">
+			<p>David Francelino - 2020</p>
+			<p><a href="https://www.facebook.com/pg/MemorialClaraNunes/photos/?ref=page_internal" target="_blank">Facebook</a> | <a href="https://www.youtube.com/channel/UCBm-HLS5tkOIsSyx2urFa8Q" target="_blank">YouTube</a></p>
+
+		</footer>
+	</div>
+</body>
+</html>
